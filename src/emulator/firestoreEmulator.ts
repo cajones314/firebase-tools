@@ -84,6 +84,8 @@ export class FirestoreEmulator implements EmulatorInstance {
       // serve WebChannel on the main port anyway.
     }
 
+    this.args.seed_from_export = "../mp_database/.dbsnapshot/2020-01-09_12:05_AM/2020-01-09_12:05_AM.overall_export_metadata"
+
     return javaEmulators.start(Emulators.FIRESTORE, this.args);
   }
 
